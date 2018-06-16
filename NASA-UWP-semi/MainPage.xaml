@@ -36,11 +36,11 @@
         <Grid Grid.Row="1" Grid.Column="1" >
 
             <StackPanel Name="Podatki" Margin="50">
+
                 
-                   
                 <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
                            <Run Text="Ime mars roverja: " FontWeight="Bold"/>
-                            <Run Text=" Curiosity"/>
+                            <Run Text=" Curiosity" />
                 </TextBlock>
                 <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
                            <Run Text="Status: " FontWeight="Bold"/>
@@ -58,16 +58,17 @@
                            <Run Text="Št. zajetih slik: " FontWeight="Bold"/>
                             <Run Text=" 337621"/>
                 </TextBlock>
-                <Button x:Name="btn" Click="btn_Click" Foreground="White" Height="34" Width="124" Content="Ogled slik" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,7,0,0" RenderTransformOrigin="0.5,0.5">
+                <Button x:Name="btn" Click="btn_Click" Foreground="White" Height="34" Width="124" Content="Ogled slik" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="150,10,0,0" RenderTransformOrigin="0.5,0.5">
                     <Button.Background>
                         <ImageBrush ImageSource="ms-appx:///Slike/space.jpg" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
             </StackPanel>
-            <Image HorizontalAlignment="Right" VerticalAlignment="Center" Source="Slike/rover-r.png" Width="600" Margin="0,0,10,0" />
+            <Image HorizontalAlignment="Right" VerticalAlignment="Center" Source="Slike/rover-r.png" Width="600" Margin="0,70,20,0" />
         </Grid>
         <Grid Grid.Column="1" Grid.Row="2">
-            <TextBlock  HorizontalAlignment="Right" Margin="20,20,20,20"   Text="Powered by science" VerticalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Lucida Sans" />
+            <TextBlock  HorizontalAlignment="Right" Margin="0,20,60,20"   Text="Powered by science" VerticalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Lucida Sans" />
+            <Image HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,20,20,20" Source="Slike/s.png"/>
         </Grid>
 
     </Grid>

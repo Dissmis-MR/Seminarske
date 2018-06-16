@@ -125,6 +125,7 @@
     <Content Include="Slike\rover-logo.png" />
     <Content Include="Slike\rover-r.png" />
     <Content Include="Slike\rover.png" />
+    <Content Include="Slike\s.png" />
     <Content Include="Slike\space.jpg" />
   </ItemGroup>
   <ItemGroup>

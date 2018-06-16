@@ -44,7 +44,8 @@
             </GridView.ItemTemplate>
         </GridView>
         <Grid Grid.Column="1" Grid.Row="2">
-            <TextBlock  HorizontalAlignment="Right" Margin="20,20,20,20"   Text="Powered by science" VerticalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Lucida Sans" />
+            <TextBlock  HorizontalAlignment="Right" Margin="0,20,60,20"   Text="Powered by science" VerticalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Lucida Sans" />
+            <Image HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,20,20,20" Source="Slike/s.png"/>
         </Grid>
 
     </Grid>
