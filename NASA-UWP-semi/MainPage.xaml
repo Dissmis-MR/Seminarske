@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="NASA_UWP_semi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:NASA_UWP_semi"
+    xmlns:data="using:NASA_UWP_semi.Model"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="11*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Border Background="Black" Grid.Row="0"/>
+        <Border Background="Black" Grid.Row="0" Grid.Column="1"/>
+        <Border Background="Black" Grid.Row="0" Grid.Column="2"/>
+        <Border Background="Black" Grid.Row="2"/>
+        <Border Background="Black" Grid.Row="2" Grid.Column="1"/>
+        <Border Background="Black" Grid.Row="2" Grid.Column="2"/>
+        <Border Background="LightGray" Grid.Row="1" Grid.Column="1"/>
+
+        <Grid  Grid.Row="0" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Center" Margin="243,43,243,42" Text="Rover na Marsu" Foreground="White" FontSize="45" FontFamily="Engravers MT" VerticalAlignment="Center" MinWidth="200" MinHeight="50" Tapped="TextBlock_Tapped"/>
+            <Image HorizontalAlignment="Left" Height="125" VerticalAlignment="Center" Width="125" Margin="10,10,10,10" Source="Slike/928px-NASA_logo.png" RenderTransformOrigin="0.467,0.361" Grid.Column="1" Tapped="Image_Tapped"/>
+            <Image HorizontalAlignment="Right" Height="125" VerticalAlignment="Center" Width="125" Margin="10,10,10,10" Source="Slike/rover-logo.png" RenderTransformOrigin="0.467,0.361" Grid.Column="1" Tapped="Image_Tapped"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" >
+
+            <StackPanel Name="Podatki" Margin="50">
+                
+                   
+                <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
+                           <Run Text="Ime mars roverja: " FontWeight="Bold"/>
+                            <Run Text=" Curiosity"/>
+                </TextBlock>
+                <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
+                           <Run Text="Status: " FontWeight="Bold"/>
+                            <Run Text=" Aktiven" Foreground="Green"/>
+                </TextBlock>
+                <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
+                           <Run Text="Datum vzleta: " FontWeight="Bold"/>
+                            <Run Text=" 26.11.2011"/>
+                </TextBlock>
+                <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
+                           <Run Text="Datum pristanka na Mars: " FontWeight="Bold"/>
+                            <Run Text=" 06.08.2012"/>
+                </TextBlock>
+                <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
+                           <Run Text="Št. zajetih slik: " FontWeight="Bold"/>
+                            <Run Text=" 337621"/>
+                </TextBlock>
+                <Button x:Name="btn" Click="btn_Click" Foreground="White" Height="34" Width="124" Content="Ogled slik" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,7,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Button.Background>
+                        <ImageBrush ImageSource="ms-appx:///Slike/space.jpg" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <Image HorizontalAlignment="Right" VerticalAlignment="Center" Source="Slike/rover-r.png" Width="600" Margin="0,0,10,0" />
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <TextBlock  HorizontalAlignment="Right" Margin="20,20,20,20"   Text="Powered by science" VerticalAlignment="Center" Foreground="White" FontSize="15" FontFamily="Lucida Sans" />
+        </Grid>
+
+    </Grid>
+
+</Page>
