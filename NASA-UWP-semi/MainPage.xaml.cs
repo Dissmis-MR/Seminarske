@@ -37,6 +37,7 @@ namespace NASA_UWP_semi
         {
             
             await Klic.NabiSlike(seznamSlik);
+            Podatki.DataContext = seznamSlik;
                               
         }
 

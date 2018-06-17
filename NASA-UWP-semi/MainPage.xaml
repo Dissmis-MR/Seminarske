@@ -6,9 +6,12 @@
     xmlns:data="using:NASA_UWP_semi.Model"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+    mc:Ignorable="d" Loaded="Page_Loaded">
 
+    <Page.Background>
+        <ImageBrush ImageSource="Slike/space.jpg"/>
+    </Page.Background>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -44,7 +47,7 @@
                 </TextBlock>
                 <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
                            <Run Text="Status: " FontWeight="Bold"/>
-                            <Run Text=" Aktiven" Foreground="Green"/>
+                            <Run Text="Aktiven" Foreground="Green"/>
                 </TextBlock>
                 <TextBlock FontSize="25" Foreground="Black" Margin="0,5,0,5">
                            <Run Text="Datum vzleta: " FontWeight="Bold"/>

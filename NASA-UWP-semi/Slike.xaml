@@ -7,7 +7,11 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded">
+    Loaded="Page_Loaded">
+
+    <Page.Background>
+        <ImageBrush ImageSource="Slike/space.jpg"/>
+    </Page.Background>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -37,7 +41,7 @@
                 
                 <DataTemplate x:DataType="data:Camera">
                     <StackPanel >
-                        <TextBlock Text="{Binding full_name}" FontSize="15" Foreground="Black"/>
+                        <TextBlock Text="{Binding camera.full_name}" FontSize="15" Foreground="Black"/>
                         <Image Source="{Binding img_src}" Stretch="Fill" Width="200" Height="200" Tapped="Image_Tapped" />
                     </StackPanel>
                 </DataTemplate>
